@@ -1,0 +1,21 @@
+{
+  "name": "ui",
+  "description": "UDVI Interface",
+  "main": "index.js",
+  "authors": [
+    "Suresh Reddy Guntaka"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "UI"
+  ],
+  "homepage": "https://github.com/gsureshreddy/ui",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
