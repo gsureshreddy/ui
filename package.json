@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gsureshreddy/ui#readme",
   "devDependencies": {
+    "del": "^3.0.0",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "minimist": "^1.2.0"
