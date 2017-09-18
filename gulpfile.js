@@ -4,6 +4,12 @@ var conf = require("./gulp/conf");
 
 plugins.del = require("del");
 plugins.path = require("path");
+plugins.wiredep = require('wiredep').stream;
+plugins._ = require('lodash');
+plugins.browserSync = require('browser-sync');
+plugins.browserSyncSpa = require('browser-sync-spa');
+plugins.proxyMiddleware = require('http-proxy-middleware');
+plugins.util = require("util");
 
 var taskFiles = require('fs').readdirSync("./gulp/tasks/");
 
