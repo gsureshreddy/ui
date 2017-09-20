@@ -14,11 +14,6 @@ bower install --allow-root
         sh 'echo "Build successful"'
       }
     }
-    stage('') {
-      steps {
-        input(message: 'Test', id: 'test', ok: 'Test Ok')
-      }
-    }
   }
   post {
     always {
