@@ -9,6 +9,11 @@ bower install --allow-root
         sh 'gulp inject:docs'
       }
     }
+    stage('test') {
+      steps {
+        sh 'echo "Build successful"'
+      }
+    }
   }
   post {
     always {
