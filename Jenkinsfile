@@ -12,5 +12,11 @@ bower install --allowRoot=true'''
         sh 'gulp build'
       }
     }
+    stage('git check-in') {
+      steps {
+        sh '''git commit -m "Jenkins-Commit" -- dist
+git push'''
+      }
+    }
   }
 }
