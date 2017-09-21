@@ -16,4 +16,7 @@ git push https://gsureshreddy:sush$81sure@github.com/gsureshreddy/ui.git'''
       }
     }
   }
+  environment {
+    GITUSER = 'credentials(\'github\')'
+  }
 }
