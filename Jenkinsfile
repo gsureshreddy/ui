@@ -11,6 +11,9 @@ bower install --allowRoot=true'''
       steps {
         sh '''gulp build
 '''
+        git(url: 'https://github.com/gsureshreddy/ui.git', branch: 'master', credentialsId: 'github')
+        sh '''git commit -m "Jenkins" -- dist
+git push'''
       }
     }
   }
