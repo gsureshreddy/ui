@@ -14,11 +14,4 @@ bower install --allowRoot=true'''
       }
     }
   }
-  post {
-    success {
-      sh 'git commit -am "Jenkins #$BUILD_NUMBER "'
-      
-    }
-    
-  }
 }
