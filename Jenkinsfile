@@ -14,8 +14,7 @@ bower install --allowRoot=true'''
     }
     stage('git check-in') {
       steps {
-        sh '''git commit -m "Jenkins-Commit" -- dist
-git push'''
+        git(branch: 'master', url: 'https://github.com/gsureshreddy/ui.git', credentialsId: 'gsureshreddy')
       }
     }
   }
