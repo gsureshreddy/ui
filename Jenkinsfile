@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('pre-requisites') {
         steps {
-            npm install
+            'npm install'
         }
     }
   }
