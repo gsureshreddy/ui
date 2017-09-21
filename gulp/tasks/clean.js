@@ -4,13 +4,11 @@ module.exports = function (gulp, $, conf) {
 
     gulp.task("clean:dev", function () {
         console.log("cleaning development folder" + conf.buildRoot);
-        $.del([conf.buildRoot, conf.tmpRoot]);
-        return;
+        return $.del([conf.buildRoot, conf.tmpRoot]);
     });
 
     gulp.task("clean", function () {
         console.log("cleaning development folder" + conf.distRoot);
-        $.del([conf.distRoot]);
-        return;
+        return $.del([conf.distRoot]);
     });
 }

@@ -10,6 +10,7 @@ plugins.browserSync = require('browser-sync');
 plugins.browserSyncSpa = require('browser-sync-spa');
 plugins.proxyMiddleware = require('http-proxy-middleware');
 plugins.util = require("util");
+plugins.runSequence = require("run-sequence");
 
 var taskFiles = require('fs').readdirSync("./gulp/tasks/");
 
