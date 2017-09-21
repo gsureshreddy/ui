@@ -12,10 +12,10 @@ bower install --allowRoot=true'''
         sh 'gulp build'
       }
     }
-    stage('git check-in') {
-      steps {
-        git(branch: 'master', url: 'https://github.com/gsureshreddy/ui.git', credentialsId: 'gsureshreddy')
-      }
+  }
+  post {
+    success {
+        git commit -m "Jenkins # $BUILD_NUMBER " -- dist
     }
   }
 }
