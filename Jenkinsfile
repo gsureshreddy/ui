@@ -10,7 +10,7 @@ bower install --allowRoot=true'''
     stage('build') {
       steps {
         sh '''gulp build
-git commit -am "Build #$BUILD_NUMBER" -- dist
+git commit -m "Build #$BUILD_NUMBER" -- dist
 git push'''
       }
     }
