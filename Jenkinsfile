@@ -17,6 +17,6 @@ git push https://${GITUSER_USR}:${GITUSER_PSW}@github.com/gsureshreddy/ui.git'''
     }
   }
   environment {
-    GITUSER = 'credentials(\'github\')'
+    GITUSER = 'credentials(\'gsureshreddy\')'
   }
 }
